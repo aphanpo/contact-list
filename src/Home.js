@@ -13,11 +13,8 @@ function Home(props) {
                 {Users.map (user => (
                     <li key={"users-tab" + user.id}>
                         <Link to={"/contacts/" + user.id}>
-                            <div id="img">
-                                <img src={user.picture.thumbnail} />
-                            </div>
+                            <img src={user.picture.thumbnail} />
                             {user.name.first} {user.name.last}
-                            
                         </Link>
                     </li>
                 ))} 

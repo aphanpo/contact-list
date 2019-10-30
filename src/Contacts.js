@@ -14,10 +14,10 @@ function Contacts(props){
             <div id="profilePic">
                 <img src={user.picture.large} />
             </div>
-            <p>{user.name.first} {user.name.last}</p>
-            <p>{user.email}</p>
-            <p>{user.cell}</p>
-            <p>{user.location.city}, {user.location.state}</p>
+            <p>Name: {user.name.first} {user.name.last}</p>
+            <p>Email: {user.email}</p>
+            <p>Phone: {user.cell}</p>
+            <p>Location: {user.location.city}, {user.location.state}</p>
         </div>
         </>
     )
